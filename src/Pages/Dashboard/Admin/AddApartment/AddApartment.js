@@ -20,7 +20,7 @@ const AddApartment = () => {
 
         console.log(apartmentData);
         // sending the review data to the server
-        fetch('http://localhost:5000/apartments', {
+        fetch('https://peaceful-refuge-64776.herokuapp.com/apartments', {
             method: 'POST',
             headers: {
                 'content-type': 'application/json'

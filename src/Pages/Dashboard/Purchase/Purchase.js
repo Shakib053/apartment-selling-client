@@ -13,7 +13,7 @@ const Purchase = (props) => {
     const [apartment, setApartment] = useState({});
 
     useEffect(() => {
-        const url = `http://localhost:5000/apartments/${id}`;
+        const url = `https://peaceful-refuge-64776.herokuapp.com/apartments/${id}`;
         fetch(url)
             .then(res => res.json())
             .then(data => setApartment(data));
@@ -40,7 +40,7 @@ const Purchase = (props) => {
             status: 'pending'
         }
         console.log(purchaseData);
-        fetch('http://localhost:5000/orders', {
+        fetch('https://peaceful-refuge-64776.herokuapp.com/orders', {
             method: 'POST',
             headers: {
                 'content-type': 'application/json'
@@ -64,19 +64,17 @@ const Purchase = (props) => {
             <Paper>
                 <Grid container spacing={3} sx={{ px: 3, py: 8 }}>
                     <Grid item md={6} sm={12} sx={{ p: 3 }}>
-                        <h3 style={{ textAlign: 'center' }}>Apartment: <span style={{ color: 'goldenrod', fontSize: '2.6rem' }}>{apartment.name}</span></h3>
+                        <h3 style={{ textAlign: 'center' }}><span style={{ color: 'goldenrod', fontSize: '2.6rem' }}>{apartment.name}</span></h3>
                         <h5>{apartment.des}</h5>
                         <p>Price : ${apartment.price}</p>
                     </Grid>
-                    <Grid item md={6} sm={12}>
-                        <img src={apartment.img} alt="" srcset="" />
+                    <Grid item sx={{ p: 3 }} style={{ width: '300px', height: '300px' }} md={6} sm={12}>
+                        <img style={{ width: '400px', height: '300px' }} src={apartment.img} alt="" srcset="" />
                     </Grid>
                 </Grid>
-
-
             </Paper>
             <Grid container spacing={2}>
-                <Grid item xs={12} md={12}>
+                <Grid style={{ textAlign: 'center' }} item xs={12} md={12}>
                     <Paper sx={{ mt: 4, p: 5, py: 4 }} >
                         <Typography variant="h5" sx={{ textAlign: 'center', color: 'primary.main', mb: 8 }} gutterBottom>Please Fill the Form to Purchase the Above Property</Typography>
                         <form onSubmit={handlePurchaseSubmit}>

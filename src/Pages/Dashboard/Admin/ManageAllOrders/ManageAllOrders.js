@@ -7,7 +7,7 @@ const ManageAllOrders = () => {
     const [allOrders, setAllOrders] = useState([]);
     const location = useLocation();
     useEffect(() => {
-        const url = 'http://localhost:5000/orders';
+        const url = 'https://peaceful-refuge-64776.herokuapp.com/orders';
         fetch(url)
             .then(res => res.json())
             .then(data => setAllOrders(data));

@@ -8,7 +8,7 @@ import SingleProperty from '../Home/SingleProperty/SingleProperty';
 const Apartments = () => {
     const [properties, setProperties] = useState([]);
     useEffect(() => {
-        fetch('http://localhost:5000/apartments')
+        fetch('https://peaceful-refuge-64776.herokuapp.com/apartments')
             .then(res => res.json())
             .then(data => setProperties(data));
     }, [])

@@ -31,17 +31,17 @@ const About = () => {
             <Grid container spacing={3} sx={{ px: 3, py: 3 }}>
 
                 <Grid sx={{ textAlign: 'center', width: 1 }} item md={4} sm={12}>
-                    <Paper sx={{ p: 3 }}>
+                    <Paper sx={{ p: 3, height: '300px' }}>
                         <i class="fas fa-mail-bulk fa-3x text-center "></i>
                         <h5 className="card-title">Mail Addresses</h5>
-                        <p >info@health-care.org</p>
-                        <p >care@health-care.com</p>
-                        <p >hr@health-care.com</p>
+                        <p >info@apartmentselling.org</p>
+                        <p >care@apartmentselling.com</p>
+                        <p >hr@apartmentselling.com</p>
                     </Paper>
                 </Grid>
 
                 <Grid sx={{ textAlign: 'center', width: 1 }} item md={4} sm={12}>
-                    <Paper sx={{ p: 3 }}>
+                    <Paper sx={{ p: 3, height: '300px' }}>
                         <i class="fas fa-map-marker-alt fa-3x text-center "></i>
                         <h5 >Our On-Site Address</h5>
                         <p><strong>USA Branch : </strong> Plot 38,Street 39,UpHill Town,
@@ -51,7 +51,7 @@ const About = () => {
                 </Grid>
 
                 <Grid sx={{ textAlign: 'center', width: 1 }} item md={4} sm={12}>
-                    <Paper sx={{ p: 3 }}>
+                    <Paper sx={{ p: 3, height: '300px' }}>
                         <i class="fas fa-tty fa-3x text-center "></i>
                         <h5>Contact Numbers</h5>
                         <p>+01245776621</p>

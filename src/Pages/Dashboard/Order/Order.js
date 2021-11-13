@@ -10,7 +10,7 @@ const Order = ({ myOrder, location }) => {
     const handleDelete = id => {
         console.log(id);
 
-        const url = `http://localhost:5000/orders/${id}`;
+        const url = `https://peaceful-refuge-64776.herokuapp.com/orders/${id}`;
         fetch(url, {
             method: 'DELETE'
         })

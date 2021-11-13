@@ -1,7 +1,6 @@
 import { Container, Typography, TextField, Button, Paper, Alert } from '@mui/material';
 import React, { useState } from 'react';
 import { Grid } from '@mui/material';
-import useAuth from '../../../hooks/useAuth';
 import Footer from '../../Shared/Footer/Footer';
 import Navbar from '../../Shared/Navbar/Navbar';
 import { Redirect, useHistory } from 'react-router';
@@ -18,7 +17,7 @@ const MakeAdmin = () => {
     }
     const handleAdminSubmit = e => {
         const user = { email };
-        fetch('http://localhost:5000/users', {
+        fetch('https://peaceful-refuge-64776.herokuapp.com/users', {
             method: 'PUT',
             headers: {
                 'content-type': 'application/json'
@@ -44,7 +43,7 @@ const MakeAdmin = () => {
                     <Grid container spacing={2}>
                         <Grid item xs={12} md={12}>
                             <Paper sx={{ mt: 4, p: 5, py: 8 }} >
-                                <Typography variant="h3" sx={{ textAlign: 'center' }} gutterBottom>Add A Review</Typography>
+                                <Typography variant="h3" sx={{ textAlign: 'center' }} gutterBottom>Make Admin</Typography>
                                 <form onSubmit={handleAdminSubmit}>
 
                                     <TextField

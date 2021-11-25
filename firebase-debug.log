@@ -1,0 +1,92 @@
+[debug] [2021-11-13T17:46:09.101Z] ----------------------------------------------------------------------
+[debug] [2021-11-13T17:46:09.105Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\User\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js deploy
+[debug] [2021-11-13T17:46:09.105Z] CLI Version:   9.22.0
+[debug] [2021-11-13T17:46:09.105Z] Platform:      win32
+[debug] [2021-11-13T17:46:09.105Z] Node Version:  v14.16.0
+[debug] [2021-11-13T17:46:09.177Z] Time:          Sat Nov 13 2021 23:46:09 GMT+0600 (Bangladesh Standard Time)
+[debug] [2021-11-13T17:46:09.178Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2021-11-13T17:46:09.305Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2021-11-13T17:46:09.306Z] > authorizing via signed-in user (kazitanjimshakib053@gmail.com)
+[debug] [2021-11-13T17:46:09.306Z] [iam] checking project apartments-sell for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2021-11-13T17:46:09.308Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/apartments-sell:testIamPermissions  
+ {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2021-11-13T17:46:10.238Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Sat, 13 Nov 2021 17:46:11 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","server-timing":"gfet4t7; dur=193","alt-svc":"clear","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-11-13T17:46:10.241Z] > refreshing access token with scopes: []
+[debug] [2021-11-13T17:46:10.241Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2021-11-13T17:46:10.814Z] <<< HTTP RESPONSE 200 {"cache-control":"no-cache, no-store, max-age=0, must-revalidate","pragma":"no-cache","expires":"Mon, 01 Jan 1990 00:00:00 GMT","date":"Sat, 13 Nov 2021 17:46:11 GMT","content-type":"application/json; charset=utf-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","server":"scaffolding on HTTPServer2","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"clear","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-11-13T17:46:10.892Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/apartments-sell [none]
+[debug] [2021-11-13T17:46:11.837Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/apartments-sell 200
+[debug] [2021-11-13T17:46:11.837Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/apartments-sell {"projectId":"apartments-sell","projectNumber":"149905954779","displayName":"apartments-sell","name":"projects/apartments-sell","resources":{"hostingSite":"apartments-sell"},"state":"ACTIVE"}
+[info] 
+[info] === Deploying to 'apartments-sell'...
+[info] 
+[info] i  deploying hosting 
+[debug] [2021-11-13T17:46:11.846Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2021-11-13T17:46:11.846Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2021-11-13T17:46:12.456Z] <<< HTTP RESPONSE 200 {"date":"Sat, 13 Nov 2021 17:46:13 GMT","expires":"Mon, 01 Jan 1990 00:00:00 GMT","cache-control":"no-cache, no-store, max-age=0, must-revalidate","pragma":"no-cache","content-type":"application/json; charset=utf-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","server":"scaffolding on HTTPServer2","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"clear","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-11-13T17:46:12.503Z] >>> HTTP REQUEST POST https://firebasehosting.googleapis.com/v1beta1/sites/apartments-sell/versions  
+ {"config":{"rewrites":[{"glob":"**","path":"/index.html"}]},"labels":{"deployment-tool":"cli-firebase"}}
+[debug] [2021-11-13T17:46:14.647Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Sat, 13 Nov 2021 17:46:15 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"clear","accept-ranges":"none","transfer-encoding":"chunked"}
+[info] i  hosting[apartments-sell]: beginning deploy... 
+[info] i  hosting[apartments-sell]: found 25 files in build 
+[debug] [2021-11-13T17:46:15.039Z] > refreshing access token with scopes: []
+[debug] [2021-11-13T17:46:15.039Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2021-11-13T17:46:15.042Z] [hosting] hash cache [YnVpbGQ] stored for 25 files
+[debug] [2021-11-13T17:46:15.042Z] [hosting][hash queue][FINAL] {"max":359,"min":6,"avg":36.84,"active":0,"complete":25,"success":25,"errored":0,"retried":0,"total":25,"elapsed":368}
+[debug] [2021-11-13T17:46:15.716Z] <<< HTTP RESPONSE 200 {"date":"Sat, 13 Nov 2021 17:46:16 GMT","cache-control":"no-cache, no-store, max-age=0, must-revalidate","pragma":"no-cache","expires":"Mon, 01 Jan 1990 00:00:00 GMT","content-type":"application/json; charset=utf-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","server":"scaffolding on HTTPServer2","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"clear","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-11-13T17:46:15.789Z] >>> [apiv2][query] POST https://firebasehosting.googleapis.com/v1beta1/sites/apartments-sell/versions/df1ece4610c639d2:populateFiles [none]
+[debug] [2021-11-13T17:46:15.789Z] >>> [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/sites/apartments-sell/versions/df1ece4610c639d2:populateFiles {"files":{"/favicon.ico":"eae62e993eb980ec8a25058c39d5a51feab118bd2100c4deebb2a9c158ec11f9","/logo192.png":"3ee59515172ee198f3be375979df15ac5345183e656720a381b8872b2a39dc8b","/logo512.png":"ee7e2f3fdb8209c4b6fd7bef6ba50d1b9dba30a25bb5c3126df057e1cb6f5331","/manifest.json":"aff3449bdc238776f5d6d967f19ec491b36aed5fb7f23ccff6500736fd58494a","/robots.txt":"bfe106a3fb878dc83461c86818bf74fc1bdc7f28538ba613cd3e775516ce8b49","/_redirects":"690ce5cd29ca7f351053625ba6455a2b3f7968ced7fcb1bea72366a7ca1f1943","/asset-manifest.json":"de645bffbd8b396e5f27b438adb3552aa2eecb8f097db65131afdcde82f4e393","/index.html":"bb30cb09b50dcd091e98940798aecefcf63e3c0b6b7e15896f2f1aa28da84d6d","/static/css/main.e6219a63.chunk.css":"48471d9e08dde8430fbb456a23eed449727d6ae5cc36d356d9319b8ee8105d61","/static/css/main.e6219a63.chunk.css.map":"6366fafabecabbe8da3294e2851b8f2a1cf6337c42deb7a1e9715d52c2585fc6","/static/js/2.eb5c3d6f.chunk.js.LICENSE.txt":"5b0f7bc56eb3fcbb6aba6b6b1864ad22f6c414a0ae823deb9b65d6e680084e5d","/static/js/3.3ca1ffb8.chunk.js":"830a7808690a0d67309f8ae3cb78d1a8688d30b0be06879ee1b26422d19eb8e2","/static/js/3.3ca1ffb8.chunk.js.map":"84f34db58a70ebc7f77eb35b3c61944e9d222642fe6102a6d792771a9b698f16","/static/js/main.ba7dc3a4.chunk.js":"0094d5efc2e0154107cbddf1b8099308a0caff108be55c4cbafa8ef1ffe71946","/static/js/runtime-main.fb9a3338.js":"4c5f953917a4e4ec4ffa555b07636fd4191264e4350a3e4b4571bff425a7ccf2","/static/js/runtime-main.fb9a3338.js.map":"473bdf307bcc370fd89a9bef79040f976a7fa288a2f93c22fc843ea97a13d551","/static/media/banner.5853bcfc.jpg":"2752b5d4a4b25e82d840e4a489b2342db955f86e61dbc39220ef7f040d7d4ac7","/static/media/logo.60121998.jpg":"ce3adfeeffb0bd6ef50c769b1ac97e72eeff9ab70f2a6b24d2c1f62cc26c055b","/static/media/payment.a2ff9804.png":"66e28d12d0803caa482a9e3092edf7ffe18ae850326ad4778e36265adc2774c4","/static/media/404.44f968b5.jpg":"3317d90579e22469221f8ed0265a8a732ec41cc4ab4b65375f7b08dd7144c682","/static/media/login.f3262775.PNG":"4e2854959b7dcd91ff315df84cf11dd036c2e7ee23ba086136e1447f717b1a42","/static/js/main.ba7dc3a4.chunk.js.map":"7d25fca2df48f83554f26b7b1bb518d8ac0b1dc6cdc37c1be0225e55421e3b64","/static/media/aboutus.a7fa5aa6.jpg":"a19ec0428170d50c33342d6f13ca1922abfc94e4514035120385cbd1f3907e15","/static/js/2.eb5c3d6f.chunk.js":"82181f58797730e69f5dc26961112362efa3b8ec1158e60a438045d97476a70f","/static/js/2.eb5c3d6f.chunk.js.map":"b4c7779c184f80ba29e018e76a8865e7eb47f78681c1548e10738569f65ccec8"}}
+[debug] [2021-11-13T17:46:17.574Z] <<< [apiv2][status] POST https://firebasehosting.googleapis.com/v1beta1/sites/apartments-sell/versions/df1ece4610c639d2:populateFiles 200
+[debug] [2021-11-13T17:46:17.574Z] <<< [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/sites/apartments-sell/versions/df1ece4610c639d2:populateFiles {"uploadUrl":"https://upload-firebasehosting.googleapis.com/upload/sites/apartments-sell/versions/df1ece4610c639d2/files"}
+[debug] [2021-11-13T17:46:17.575Z] [hosting][populate queue][FINAL] {"max":2536,"min":2536,"avg":2536,"active":0,"complete":1,"success":1,"errored":0,"retried":0,"total":1,"elapsed":2536}
+[debug] [2021-11-13T17:46:17.576Z] [hosting] uploads queued: 0
+[debug] [2021-11-13T17:46:17.576Z] [hosting][upload queue][FINAL] {"max":0,"min":9999999999,"avg":0,"active":0,"complete":0,"success":0,"errored":0,"retried":0,"total":0,"elapsed":1636825577576}
+[info] +  hosting[apartments-sell]: file upload complete 
+[debug] [2021-11-13T17:46:17.578Z] [hosting] deploy completed after 2930ms
+[debug] [2021-11-13T17:46:17.582Z] [
+  {
+    "config": {
+      "public": "build",
+      "rewrites": [
+        {
+          "source": "**",
+          "destination": "/index.html"
+        }
+      ],
+      "ignore": [
+        "firebase.json",
+        "**/.*",
+        "**/node_modules/**"
+      ],
+      "site": "apartments-sell"
+    },
+    "site": "apartments-sell",
+    "version": "sites/apartments-sell/versions/df1ece4610c639d2"
+  }
+]
+[info] i  hosting[apartments-sell]: finalizing version... 
+[debug] [2021-11-13T17:46:17.583Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2021-11-13T17:46:17.584Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2021-11-13T17:46:18.345Z] <<< HTTP RESPONSE 200 {"cache-control":"no-cache, no-store, max-age=0, must-revalidate","date":"Sat, 13 Nov 2021 17:46:19 GMT","pragma":"no-cache","expires":"Mon, 01 Jan 1990 00:00:00 GMT","content-type":"application/json; charset=utf-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","server":"scaffolding on HTTPServer2","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"clear","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-11-13T17:46:18.428Z] >>> HTTP REQUEST PATCH https://firebasehosting.googleapis.com/v1beta1/sites/apartments-sell/versions/df1ece4610c639d2?updateMask=status  
+ {"status":"FINALIZED"}
+[debug] [2021-11-13T17:46:20.168Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Sat, 13 Nov 2021 17:46:21 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"clear","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-11-13T17:46:20.169Z] [hosting] finalized version for apartments-sell: {"name":"sites/apartments-sell/versions/df1ece4610c639d2","status":"FINALIZED","config":{"rewrites":[{"glob":"**","path":"/index.html"}]},"labels":{"deployment-tool":"cli-firebase"},"createTime":"2021-11-13T17:46:15.289958Z","createUser":{"email":"kazitanjimshakib053@gmail.com"},"finalizeTime":"2021-11-13T17:46:21.021546Z","finalizeUser":{"email":"kazitanjimshakib053@gmail.com"}}
+[info] +  hosting[apartments-sell]: version finalized 
+[info] i  hosting[apartments-sell]: releasing new version... 
+[debug] [2021-11-13T17:46:20.171Z] >>> HTTP REQUEST POST https://firebasehosting.googleapis.com/v1beta1/sites/apartments-sell/releases?version_name=sites/apartments-sell/versions/df1ece4610c639d2  
+ {"message":null}
+[debug] [2021-11-13T17:46:34.252Z] Error: socket hang up
+    at connResetException (internal/errors.js:607:14)
+    at TLSSocket.socketOnEnd (_http_client.js:493:23)
+    at TLSSocket.emit (events.js:327:22)
+    at TLSSocket.EventEmitter.emit (domain.js:467:12)
+    at endReadableNT (internal/streams/readable.js:1327:12)
+    at processTicksAndRejections (internal/process/task_queues.js:80:21)
+[error] 
+[error] Error: Server Error. socket hang up

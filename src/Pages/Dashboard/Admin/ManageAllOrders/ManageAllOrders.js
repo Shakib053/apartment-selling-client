@@ -15,7 +15,6 @@ const ManageAllOrders = () => {
     return (
         <>
             <Dashboard></Dashboard>
-
             <div>
                 {
                     allOrders.map(myOrder => <Order myOrder={myOrder} location={location}></Order>)
